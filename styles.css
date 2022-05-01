@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+:root {
+    /*========== Colors ==========*/
+    /*#000000, #313A49, #202632, #9BABB4, #53FFA9, #1F2632*/
+    --box-color: #313a49;
+    --background: #202632;
+    --text-color: #dae1e6;
+    --button-color: #53ffa9;
+    --dice-color: #1f2632;
+
+    /*========== Font and typography ==========*/
+    --main-font: "Roboto", sans-serif;
+
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /*========== Margenes Bottom ==========*/
+    /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+    --mb-0-25: 0.25rem;
+    --mb-0-5: 0.5rem;
+    --mb-0-75: 0.75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+}
+
+body {
+    background-color: var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: var(--main-font);
+}
+
+.outer_box {
+    background-color: var(--box-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33vw;
+    height: 40vh;
+    transform: translateY(80%);
+    justify-content: space-around;
+    border-radius: 0.5em;
+}
+
+.advice_id {
+    color: var(--button-color);
+    transform: translateY(150%);
+    letter-spacing: 2.7px;
+    font-size: 0.75em;
+    font-weight: 500;
+}
+
+.advice_text {
+    width: 25vw;
+    height: 20vh;
+    font-size: 1.6em;
+    font-weight: 700;
+    text-align: center;
+    color: var(--text-color);
+    transform: translateY(5%);
+}
+
+#button {
+    margin: 0;
+    padding: 0;
+    width: 7vh;
+    height: 7vh;
+    background-color: #53ffa9;
+    border: none;
+    outline: none;
+    border-radius: 100px;
+    transform: translateY(410%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.1s all ease-out;
+}
+
+#button:hover {
+    box-shadow: 0 0 40px var(--button-color);
+    transition: 0.1s all ease-in;
+}
+
+.line {
+    transform: translateY(-190%);
+}
